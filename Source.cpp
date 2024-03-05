@@ -218,7 +218,7 @@ void run() {
 		if (ans == 'Y') {
 			cout << "enter a number of Cars you want to creat : ";
 			cin >> n;
-			cout << "enter info of Cars : ";
+			cout << "enter info of Cars :\n";
 			for (int i = 0; i < n; i++) {
 				cout << "ID : "; cin >> arr[i].id;
 				cout << "make : "; cin >> arr[i].make;
