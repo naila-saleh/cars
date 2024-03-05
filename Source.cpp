@@ -193,7 +193,7 @@ void save(Car* arr, int n) {
 		cout << "can't save this file!";
 	}
 }
-int main() {
+void run() {
 	int n;
 	Car* arr = new Car[MAXSIZE];
 	ifstream filein;
@@ -212,7 +212,7 @@ int main() {
 		filein.close();
 	}
 	else {
-		cout << "could not open file!\nDo you want to creat one?\n";
+		cout << "could not open file!\nDo you want to creat one?\t(Y/N)\n";
 		char ans;
 		cin >> ans;
 		if (ans == 'Y') {
@@ -232,7 +232,7 @@ int main() {
 		}
 		else if (ans == 'N') {
 			cout << "Thanks for using our app!";
-			return 0;
+			return;
 		}
 	}
 	menu();
@@ -255,5 +255,8 @@ int main() {
 		cin >> r;
 	}
 	cout << "Thanks for using our app!";
+}
+int main() {
+	run();
 	return 0;
 }
